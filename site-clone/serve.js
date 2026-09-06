@@ -31,6 +31,7 @@ const server = http.createServer((req, res) => {
     reqPath = '/index.html';
   }
 
+  // Handle empty image/font queries from dynamic frontend code
   if (reqPath === '/images/' || reqPath === '/images' || reqPath === '/fonts/' || reqPath === '/fonts') {
     res.writeHead(204);
     res.end();
@@ -39,19 +40,27 @@ const server = http.createServer((req, res) => {
 
   let filePath = path.join(ROOT_DIR, reqPath);
 
-  // Fallback to index.html if file does not exist (SPA style)
-  if (!fs.existsSync(filePath)) {
-    filePath = path.join(ROOT_DIR, 'index.html');
-  }
-
-  const stat = fs.statSync(filePath);
-  if (stat.isDirectory()) {
+  // Clean URL resolution
+  if (fs.existsSync(filePath)) {
+    const stat = fs.statSync(filePath);
+    if (stat.isDirectory()) {
+      filePath = path.join(filePath, 'index.html');
+    }
+  } else if (fs.existsSync(filePath + '.html')) {
+    filePath = filePath + '.html';
+  } else if (fs.existsSync(path.join(filePath, 'index.html'))) {
     filePath = path.join(filePath, 'index.html');
   }
 
-  if (!fs.existsSync(filePath)) {
-    res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
-    res.end('404 Not Found');
+  if (!fs.existsSync(filePath) || fs.statSync(filePath).isDirectory()) {
+    const notFoundPath = path.join(ROOT_DIR, '404.html');
+    if (fs.existsSync(notFoundPath)) {
+      res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
+      fs.createReadStream(notFoundPath).pipe(res);
+    } else {
+      res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+      res.end('404 Not Found');
+    }
     return;
   }
 

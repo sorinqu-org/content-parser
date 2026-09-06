@@ -33,9 +33,13 @@ export const TOOLS: Tool[] = [
           type: 'boolean',
           description: 'If true, crawls internal links and captures multi-page screenshots/routes.'
         },
+        crawlAllRoutes: {
+          type: 'boolean',
+          description: 'If true, discovers and crawls all endpoints discovered via sitemaps and links.'
+        },
         maxPages: {
           type: 'number',
-          description: 'Maximum number of pages to crawl (default: 5)'
+          description: 'Maximum number of pages to crawl (default: 50, set 0 for all discovered endpoints)'
         },
         maxDepth: {
           type: 'number',
@@ -123,7 +127,7 @@ export const TOOLS: Tool[] = [
   {
     name: 'extract_site_structure',
     description:
-      'Crawls the website to map internal routes, sitemaps (sitemap.xml, robots.txt), and external outbound links.',
+      'Crawls the website to map all internal endpoints, routes, sitemaps (parsing sitemap.xml, robots.txt), and external outbound links.',
     inputSchema: {
       type: 'object',
       properties: {
@@ -137,7 +141,7 @@ export const TOOLS: Tool[] = [
         },
         maxPages: {
           type: 'number',
-          description: 'Maximum routes to discover (default: 15)'
+          description: 'Maximum routes to discover (default: 50, set 0 for all endpoints)'
         },
         includeExternal: {
           type: 'boolean',

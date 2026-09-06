@@ -16,7 +16,8 @@ export async function handleToolCall(name: string, args: Record<string, any>): P
       const downloadAssets = Boolean(args.downloadAssets);
       const outputDir = args.outputDir as string | undefined;
       const crawlPages = Boolean(args.crawlPages);
-      const maxPages = typeof args.maxPages === 'number' ? args.maxPages : 5;
+      const crawlAllRoutes = Boolean(args.crawlAllRoutes);
+      const maxPages = typeof args.maxPages === 'number' ? args.maxPages : (crawlAllRoutes ? 0 : 50);
       const maxDepth = typeof args.maxDepth === 'number' ? args.maxDepth : 2;
       const viewports = args.viewports;
       const colorScheme = args.colorScheme;
@@ -27,6 +28,7 @@ export async function handleToolCall(name: string, args: Record<string, any>): P
         downloadAssets,
         outputDir,
         crawlPages,
+        crawlAllRoutes,
         maxPages,
         maxDepth,
         viewports,
@@ -118,7 +120,7 @@ export async function handleToolCall(name: string, args: Record<string, any>): P
         await session.page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
         const structure = await extractStructure(session.page, url, {
           maxDepth: args.maxDepth ?? 2,
-          maxPages: args.maxPages ?? 15,
+          maxPages: args.maxPages !== undefined ? args.maxPages : 50,
           includeExternal: Boolean(args.includeExternal)
         });
 

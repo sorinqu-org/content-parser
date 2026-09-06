@@ -97,4 +97,28 @@ describe('Content Parser Test Suite', () => {
     assert.strictEqual(response.content.title, 'Dispatch Test');
     assert.ok(response.assets.images.length >= 1);
   });
+
+  test('Structure extraction discovers endpoints from internal links', async () => {
+    const fixtureHtml = `
+      <!DOCTYPE html>
+      <html>
+        <head><title>Route Test</title></head>
+        <body>
+          <a href="/news">News</a>
+          <a href="/games">Games</a>
+          <a href="/contact">Contact</a>
+        </body>
+      </html>
+    `;
+    const dataUrl = `data:text/html;base64,${Buffer.from(fixtureHtml).toString('base64')}`;
+    const result = await parseUrl({
+      url: dataUrl,
+      targets: ['structure']
+    });
+
+    assert.ok(result.structure);
+    assert.ok(Array.isArray(result.structure.endpoints));
+    assert.ok(result.structure.endpoints.length >= 1);
+  });
 });
+

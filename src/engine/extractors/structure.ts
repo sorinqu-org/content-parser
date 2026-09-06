@@ -60,6 +60,26 @@ export async function extractStructure(
     } catch {}
   }
 
+  // Parse discovered sitemaps to extract all <loc> URLs
+  const sitemapUrls: string[] = [];
+  for (const smUrl of sitemaps) {
+    try {
+      const resp = await page.request.get(smUrl, { timeout: 8000 });
+      if (resp.ok()) {
+        const xml = await resp.text();
+        const locMatches = xml.match(/<loc>([^<]+)<\/loc>/gi);
+        if (locMatches) {
+          for (const lm of locMatches) {
+            const u = lm.replace(/<\/?loc>/gi, '').trim();
+            if (u && !sitemapUrls.includes(u)) {
+              sitemapUrls.push(u);
+            }
+          }
+        }
+      }
+    } catch {}
+  }
+
   // 2. Extract internal and external links from current page
   const pageLinks = await page.evaluate((origin) => {
     const internal: string[] = [];
@@ -104,11 +124,28 @@ export async function extractStructure(
   ];
 
   const visited = new Set<string>([rootUrl]);
-  const queue: Array<{ url: string; depth: number }> = pageLinks.internal
-    .filter((u) => u !== rootUrl)
-    .map((url) => ({ url, depth: 1 }));
+  const queue: Array<{ url: string; depth: number }> = [];
 
-  while (queue.length > 0 && routes.length < maxPages) {
+  // Enqueue sitemap URLs first
+  for (const smUrl of sitemapUrls) {
+    try {
+      const parsed = new URL(smUrl);
+      if (parsed.origin === rootOrigin && !visited.has(smUrl)) {
+        queue.push({ url: smUrl, depth: 1 });
+      }
+    } catch {}
+  }
+
+  // Enqueue internal links from page
+  for (const intUrl of pageLinks.internal) {
+    if (!visited.has(intUrl) && !queue.some((q) => q.url === intUrl)) {
+      queue.push({ url: intUrl, depth: 1 });
+    }
+  }
+
+  const effectiveMaxPages = options.maxPages !== undefined ? options.maxPages : 50;
+
+  while (queue.length > 0 && (effectiveMaxPages === 0 || routes.length < effectiveMaxPages)) {
     const current = queue.shift()!;
     if (visited.has(current.url)) continue;
     visited.add(current.url);
@@ -146,9 +183,27 @@ export async function extractStructure(
     }
   }
 
+  // Collect all distinct discovered endpoints
+  const allEndpoints = Array.from(
+    new Set([
+      rootUrl,
+      ...sitemapUrls.filter((u) => {
+        try {
+          return new URL(u).origin === rootOrigin;
+        } catch {
+          return false;
+        }
+      }),
+      ...pageLinks.internal,
+      ...routes.map((r) => r.url)
+    ])
+  );
+
   return {
     rootUrl,
     sitemaps,
+    sitemapUrls,
+    endpoints: allEndpoints,
     routes,
     internalLinksCount: pageLinks.internal.length,
     externalLinksCount: pageLinks.external.length,

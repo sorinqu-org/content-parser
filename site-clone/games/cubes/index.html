@@ -1,0 +1,2232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="canonical" href="/games/cubes">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/images/apple-touch-icon-precomposed.png">    <title>VR игра Cubes — клуб виртуальной реальности «Другие Миры» в Магнитогорске</title>
+    <meta name="description" content="Прекрасный свободный мир виртуальной реальности, созданный из кубиков. Заснеженные горы, прекрасный лес, уютный дом и всё это в VR в Магнитогорске.">
+            <meta name="yandex-verification" content="bda4d38f95ea3259"/>
+                    <meta name="google-site-verification" content="gkBSFo65xhEmLWBUU23RhDxZzU_uhIJdrscStu-ZUx4"/>
+                    <meta name="global-yandex-metrica" content="96031839"/>
+        <link rel="preload" href="https://russia.another-world.com/fonts/IgraSans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://russia.another-world.com/fonts/FeatureMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/index.min.css"/>
+                <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js', 'ym');
+
+    ym(96031839, 'init', {clickmap:true, accurateTrackBounce:true, trackLinks:true, webvisor:true,});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/96031839" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+                </head>
+<body
+        data-country="Russia"
+        data-branch="global"
+        data-city="Magnitogorsk"
+        data-time-format="24"
+        >
+<div class="awMenu__branchSelect__back active"></div>
+<div class="awMenu__wrapper">
+    <div class="awMenu__firstRowContainer">
+        <div class="awMenu__firstRow">
+            <div class="awMenu__firstRow-left">
+                <div class="awMenu__location ">
+                    <div class="awMenu__location-title">
+                        <a id="awMenu__location-button" onclick="openLocationPopUp(true, false)">
+                            <div class="awMenu__location-icon"><img src="/images/top-location.svg" alt=""></div>
+                                                            Выберите VR арену
+                                                    </a>
+                    </div>
+                                        <div class="awMenu__branchSelect active">
+                        <div class="awMenu__branchSelect__close" onclick="closeSelectBranch()"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L15 15M15 1L1 15" stroke="white" stroke-width="1.5"/></svg></div>
+                        <div class="awMenu__branchSelect__title">Выберите локацию</div>
+                        <div class="awMenu__branchSelect__town"><span>Выбранный город: </span><a onclick="openLocationPopUp(false, false)">Магнитогорск</a></div>
+                        <div class="awMenu__branchSelect__branches">
+                                                <div> <a onclick="gmbs('park')" href="/games/cubes?select-branch=park"> <span>ТРК «Семейный Парк» </span></a></div>
+                                                <div> <a onclick="gmbs('karl-marx')" href="/games/cubes?select-branch=karl-marx"> <span>ТЦ «Обувь Сити»</span></a></div>
+                                                </div>
+                                                <div class="awMenu__branchSelect__later" onclick="closeSelectBranch()">Выбрать позже</div>
+                                            </div>
+                                    </div>
+                                            </div>
+            <div class="awMenu__firstRow-right">
+                                                                </div>
+        </div>
+    </div>
+    <div class="awMenu__secondRowContainer">
+        <div class="awMenu__secondRow">
+            <div class="awMenu__logo" id="headerLogo" onclick="closeSelectLocationPopUp()">
+                <a href="/">                <img src="/images/aw_logo_rus.svg" alt="" >                </a>            </div>
+            <div class="awMenu__menu">
+                <ul>
+                                                                        <li><a class="awMenu__top-li" href="/games">Игры</a>
+                                                            </li>
+                                                                                                <li class="sub"><a class="awMenu__top-li" href="#events">Мероприятия</a>
+                                                                    <ul>
+                                                                                                                                    <li><a class="awMenu__sub-li" href="/birthday">День рождения</a></li>
+                                                                                                                                                                                <li><a class="awMenu__sub-li" href="/corporate">Корпоратив</a></li>
+                                                                                                                                                                                <li><a class="awMenu__sub-li" href="/graduation">Выпускной</a></li>
+                                                                                                                                                                                <li><a class="awMenu__sub-li" href="/new-year">Новый год</a></li>
+                                                                                                                        </ul>
+                                                            </li>
+                                                                                                <li><a class="awMenu__top-li" href="/#tarify">Тарифы</a>
+                                                            </li>
+                                                                                                <li><a class="awMenu__top-li" href="/news">Новости</a>
+                                                            </li>
+                                                                                                <li><a class="awMenu__top-li" href="/vr-certificate">Сертификаты</a>
+                                                            </li>
+                                                                                                <li><a onclick="gms('franchise_click')" class="awMenu__top-li" href="https://business.another-world.com/" target="_blank">Франшиза</a>
+                                                            </li>
+                                                                                                <li><a class="awMenu__top-li" href="/contact">Контакты</a>
+                                                            </li>
+                                                            </ul>
+            </div>
+            <div class="awMenu__ipadButtons">
+
+                <div class="awMenu__button-mobile">
+                                            
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy" class="redButton"  onclick="bookingOpen(&#039;main_header&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                                    </div>
+
+                <div class="awMenu__burger">
+                    <div class="awMenu__burger-icon" onclick="burger(this)"><span></span></div>
+                </div>
+                <div class="awMenu__button">
+                                            
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy" class="redButton"  onclick="bookingOpen(&#039;main_header&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать игру</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                                    </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="awMobileMenu__wrapper">
+    <div class="awMobileMenu__menu">
+        <ul>
+                                            <li><a href="/games">Игры</a></li>
+                                                            <li><a href="/birthday">День рождения</a></li>
+                                                            <li><a href="/corporate">Корпоратив</a></li>
+                                                            <li><a href="/graduation">Выпускной</a></li>
+                                                            <li><a href="/new-year">Новый год</a></li>
+                                                            <li><a href="/#tarify">Тарифы</a></li>
+                                                            <li><a href="/news">Новости</a></li>
+                                                            <li><a href="/about">О нас</a></li>
+                                                            <li><a href="/faq">FAQ</a></li>
+                                                            <li><a href="/vr-certificate">Сертификаты</a></li>
+                                                            <li><a onclick="gms('franchise_click')" href="https://business.another-world.com/" target="_blank">Франшиза</a></li>
+                                                            <li><a href="/contact">Контакты</a></li>
+                                    </ul>
+        <div class="awMobileMenu__icons">
+                                                    <div class="awMobileMenu__contact">
+                    <div>
+                        <span> ТРК «Семейный Парк»  </span>
+                        <span><a href="tel:+79023062090"><img src="/images/top-phone.svg" alt=""> +7 (902) 306-20-90</a></span>
+                    </div>
+                </div>
+                                                            <div class="awMobileMenu__contact">
+                    <div>
+                        <span> ТЦ «Обувь Сити» </span>
+                        <span><a href="tel:+79023062090"><img src="/images/top-phone.svg" alt=""> +7 (902) 306-20-90</a></span>
+                    </div>
+                </div>
+                                            </div>
+    </div>
+</div>
+<div class="awUpArrow circleButton" onclick="scrollToTop()">
+    <img src="/images/up-arrow.svg" alt="">
+</div>
+    <div class="awSiteSelect__wrapper hide">
+    <div class="awSiteSelect popup">
+        <div class="awSiteSelect__container">
+            <div class="awSiteSelect__select">
+                <div class="awSiteSelect__input" onclick="openCountries()">
+                    <div class="awSiteSelect__input__name">
+                        <img src="/images/Russia.webp" alt="" loading="lazy">
+                        <span>Россия</span>
+                    </div>
+                    <img class="awSiteSelect__input__arrow" src="/images/arrowDown.svg" loading="lazy" alt="">
+                </div>
+                <div class="awSiteSelect__options">
+                                        <div class="awSiteSelect__options__region">СНГ</div>
+                                        <div class="awSiteSelect__options__country" data-country="Azerbaijan" onclick="changeSelectCounty(this)"  ><div><img src="/images/Azerbaijan.webp" loading="lazy" alt=""><span>Айзербайджан</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Belarus" onclick="changeSelectCounty(this)"  ><div><img src="/images/Belarus.webp" loading="lazy" alt=""><span>Беларусь</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Kazakhstan" onclick="changeSelectCounty(this)"  ><div><img src="/images/Kazakhstan.webp" loading="lazy" alt=""><span>Казахстан</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Kyrgyzstan" onclick="changeSelectCounty(this)"  ><div><img src="/images/Kyrgyzstan.webp" loading="lazy" alt=""><span>Кыргызстан</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country active" data-country="Russia" onclick="changeSelectCounty(this)"  ><div><img src="/images/Russia.webp" loading="lazy" alt=""><span>Россия</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Uzbekistan" onclick="changeSelectCounty(this)"  ><div><img src="/images/Uzbekistan.webp" loading="lazy" alt=""><span>Узбекистан</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__region">Азиатско-Тихоокеанский регион</div>
+                                        <div class="awSiteSelect__options__country" data-country="Vietnam" onclick="changeSelectCounty(this)"  ><div><img src="/images/Vietnam.webp" loading="lazy" alt=""><span>Вьетнам</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="India" onclick="changeSelectCounty(this)"  ><div><img src="/images/India.webp" loading="lazy" alt=""><span>Индия</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Indonesia" onclick="changeSelectCounty(this)"  ><div><img src="/images/Indonesia.webp" loading="lazy" alt=""><span>Индонезия</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Malaysia" onclick="changeSelectCounty(this)"  ><div><img src="/images/Malaysia.webp" loading="lazy" alt=""><span>Малайзия</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Thailand" onclick="changeSelectCounty(this)"  ><div><img src="/images/Thailand.webp" loading="lazy" alt=""><span>Тайланд</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__region">Африка, Ближний Восток и Индия</div>
+                                        <div class="awSiteSelect__options__country" data-country="Bahrain" onclick="changeSelectCounty(this)"  ><div><img src="/images/Bahrain.webp" loading="lazy" alt=""><span>Бахрейн</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Egypt" onclick="changeSelectCounty(this)"  ><div><img src="/images/Egypt.webp" loading="lazy" alt=""><span>Египет</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="India" onclick="changeSelectCounty(this)"  ><div><img src="/images/India.webp" loading="lazy" alt=""><span>Индия</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Cameroon" onclick="changeSelectCounty(this)"  ><div><img src="/images/Cameroon.webp" loading="lazy" alt=""><span>Камерун</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Malaysia" onclick="changeSelectCounty(this)"  ><div><img src="/images/Malaysia.webp" loading="lazy" alt=""><span>Малайзия</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__region">Европа</div>
+                                        <div class="awSiteSelect__options__country" data-country="Hungary" onclick="changeSelectCounty(this)"  ><div><img src="/images/Hungary.webp" loading="lazy" alt=""><span>Hungary</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Austria" onclick="changeSelectCounty(this)"  ><div><img src="/images/Austria.webp" loading="lazy" alt=""><span>Австрия</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Bulgaria" onclick="changeSelectCounty(this)"  ><div><img src="/images/Bulgaria.webp" loading="lazy" alt=""><span>Болгария</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Bosnia and Herzegovina" onclick="changeSelectCounty(this)"  ><div><img src="/images/Bosnia and Herzegovina.webp" loading="lazy" alt=""><span>Босния и Герцеговина</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Great Britain" onclick="changeSelectCounty(this)"  ><div><img src="/images/Great Britain.webp" loading="lazy" alt=""><span>Великобритания</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Germany" onclick="changeSelectCounty(this)"  ><div><img src="/images/Germany.webp" loading="lazy" alt=""><span>Германия</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Greece" onclick="changeSelectCounty(this)"  ><div><img src="/images/Greece.webp" loading="lazy" alt=""><span>Греция</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Georgia" onclick="changeSelectCounty(this)"  ><div><img src="/images/Georgia.webp" loading="lazy" alt=""><span>Грузия</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Spain" onclick="changeSelectCounty(this)"  ><div><img src="/images/Spain.webp" loading="lazy" alt=""><span>Испания</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Italy" onclick="changeSelectCounty(this)"  ><div><img src="/images/Italy.webp" loading="lazy" alt=""><span>Италия</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Cyprus" onclick="changeSelectCounty(this)"  ><div><img src="/images/Cyprus.webp" loading="lazy" alt=""><span>Кипр</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Latvia" onclick="changeSelectCounty(this)"  ><div><img src="/images/Latvia.webp" loading="lazy" alt=""><span>Латвия</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Moldova" onclick="changeSelectCounty(this)"  ><div><img src="/images/Moldova.webp" loading="lazy" alt=""><span>Молдова</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Netherlands" onclick="changeSelectCounty(this)"  ><div><img src="/images/Netherlands.webp" loading="lazy" alt=""><span>Нидерланды</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Portugal" onclick="changeSelectCounty(this)"  ><div><img src="/images/Portugal.webp" loading="lazy" alt=""><span>Португалия</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Romania" onclick="changeSelectCounty(this)"  ><div><img src="/images/Romania.webp" loading="lazy" alt=""><span>Румыния</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Serbia" onclick="changeSelectCounty(this)"  ><div><img src="/images/Serbia.webp" loading="lazy" alt=""><span>Сербия</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Slovakia" onclick="changeSelectCounty(this)"  ><div><img src="/images/Slovakia.webp" loading="lazy" alt=""><span>Словакия</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Slovenia" onclick="changeSelectCounty(this)"  ><div><img src="/images/Slovenia.webp" loading="lazy" alt=""><span>Словения</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Croatia" onclick="changeSelectCounty(this)"  ><div><img src="/images/Croatia.webp" loading="lazy" alt=""><span>Хорватия</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Czech Republic" onclick="changeSelectCounty(this)"  ><div><img src="/images/Czech Republic.webp" loading="lazy" alt=""><span>Чехия</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="Estonia" onclick="changeSelectCounty(this)"  ><div><img src="/images/Estonia.webp" loading="lazy" alt=""><span>Эстония</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__region">Соединенные Штаты, Канада</div>
+                                        <div class="awSiteSelect__options__country" data-country="Canada" onclick="changeSelectCounty(this)"  ><div><img src="/images/Canada.webp" loading="lazy" alt=""><span>Канада</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                        <div class="awSiteSelect__options__country" data-country="USA" onclick="changeSelectCounty(this)"  ><div><img src="/images/USA.webp" loading="lazy" alt=""><span>США</span></div><div style="flex-grow: 1;"></div><img class="awOptionSelect" src="/images/selected.svg" alt=""></div>
+                                    </div>
+            </div>
+            <div class="awSiteSelect__header"><p>Выберите ваш город</p></div>
+            <div class="awSiteSelect__search">
+                <input id="search-town" data-message="По вашему запросу ничего не найдено." placeholder="Начните вводить ваш город" oninput="searchSelect(this)">
+                <div><img src="/images/aw-search.svg" alt="" loading="lazy"></div>
+            </div>
+            <div class="awSiteSelect__no-match">По вашему запросу ничего не найдено.</div>
+                                    <div class="awSiteSelect__town" id="Azerbaijan">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Б</li><li><a href="https://another-world.com/select-location?town=Bacau">Баку</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Belarus">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">M</li><li><a href="https://minsk.another-world.com">Minsk</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Г</li><li><a href="https://gomel.another-world.com">Гомель</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Kazakhstan">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">А</li><li><a href="https://almaty-riviera.another-world.com">Алматы</a></li><li><a href="https://astana-ncity.another-world.com">Астана</a></li><li><a href="https://atyrau.another-world.com">Атырау</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">К</li><li><a href="https://karaganda.another-world.com">Караганда</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">У</li><li><a href="https://oskemen.another-world.com">Усть-Каменогорск</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Kyrgyzstan">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">К</li><li><a href="https://karakol.another-world.com">Каракол</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town active" id="Russia">
+                <ul class="awSiteSelect__columns4">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">А</li><li><a href="https://abakan.another-world.com">Абакан</a></li><li><a href="https://almetyevsk.another-world.com">Альметьевск</a></li><li><a href="https://anapa.another-world.com">Анапа</a></li><li><a href="https://apatity.another-world.com">Апатиты</a></li><li><a href="https://armavir.another-world.com">Армавир</a></li><li><a href="https://artem.another-world.com">Артем</a></li><li><a href="https://arkhangelsk.another-world.com">Архангельск</a></li><li><a href="https://astrahan.another-world.com">Астрахань</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Б</li><li><a href="https://balakovo.another-world.com">Балаково</a></li><li><a href="https://balashikha.another-world.com">Балашиха</a></li><li><a href="https://drugie-miry.ru">Барнаул</a></li><li><a href="https://bataysk.another-world.com">Батайск</a></li><li><a href="https://bakhchisarai.another-world.com">Бахчисарай</a></li><li><a href="https://belaya-kalitva.another-world.com">Белая Калитва</a></li><li><a href="https://belorechensk.another-world.com">Белореченск</a></li><li><a href="https://beloyarskiy.another-world.com">Белоярский</a></li><li><a href="https://berezniki.another-world.com">Березники</a></li><li><a href="https://bratsk.another-world.com">Братск</a></li><li><a href="https://bryansk.another-world.com">Брянск</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">В</li><li><a href="https://velsk.another-world.com">Вельск</a></li><li><a href="https://verhnyasalda.another-world.com">Верхняя Салда</a></li><li><a href="https://vladivostok.another-world.com">Владивосток</a></li><li><a href="https://volgograd.another-world.com">Волгоград</a></li><li><a href="https://voronezh.another-world.com">Воронеж</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Г</li><li><a href="https://grozny.another-world.com">Грозный</a></li><li><a href="https://gus-hrustalniy.another-world.com">Гусь-Хрустальный</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Д</li><li><a href="https://dmitrov.another-world.com">Дмитров</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Е</li><li><a href="https://evpatoriya.another-world.com">Евпатория</a></li><li><a href="https://yeysk.another-world.com">Ейск</a></li><li><a href="https://ekaterinburg.another-world.com">Екатеринбург</a></li><li><a href="https://efremov.another-world.com">Ефремов</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Ж</li><li><a href="https://zheleznogorsk.another-world.com">Железногорск</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">И</li><li><a href="https://izhevsk.another-world.com">Ижевск</a></li><li><a href="https://irkutsk-vr-arena.ru">Иркутск</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">К</li><li><a href="https://kemerovo.another-world.com">Кемерово</a></li><li><a href="https://kirov.another-world.com">Киров</a></li><li><a href="https://kogalym.another-world.com">Когалым</a></li><li><a href="https://kolpashevo.another-world.com">Колпашево</a></li><li><a href="https://komsomolsk-na-amure.another-world.com">Комсомольск-на-Амуре</a></li><li><a href="https://konakovo.another-world.com">Конаково</a></li><li><a href="https://korolev.another-world.com">Королев</a></li><li><a href="https://kostroma.another-world.com">Кострома</a></li><li><a href="https://krasnogorsk.another-world.com">Красногорск</a></li><li><a href="https://krasnodar.another-world.com">Краснодар</a></li><li><a href="https://krasnoturinsk.another-world.com">Краснотурьинск</a></li><li><a href="https://krasnoyarsk.another-world.com">Красноярск</a></li><li><a href="https://kropotkin.another-world.com">Кропоткин</a></li><li><a href="https://kulebaki.another-world.com">Кулебаки</a></li><li><a href="https://kungur.another-world.com">Кунгур</a></li><li><a href="https://kursk.another-world.com">Курск</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Л</li><li><a href="https://lesozavodsk.another-world.com">Лесозаводск</a></li><li><a href="https://lipetsk.another-world.com">Липецк</a></li><li><a href="https://lubercy.another-world.com">Люберцы</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">М</li><li><a href="https://magadan.another-world.com">Магадан</a></li><li><a href="">Магнитогорск</a></li><li><a href="https://maykop.another-world.com">Майкоп</a></li><li><a href="https://miass.another-world.com">Миасс</a></li><li><a href="https://minusinsk.another-world.com">Минусинск</a></li><li><a href="https://mozhga.another-world.com">Можга</a></li><li><a href="https://monchegorsk.another-world.com">Мончегорск</a></li><li><a href="https://moscow.another-world.com">Москва</a></li><li><a href="https://murmansk.another-world.com">Мурманск</a></li><li><a href="https://mytishchi.another-world.com">Мытищи</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Н</li><li><a href="https://naberezhnye-chelny.another-world.com">Набережные Челны</a></li><li><a href="https://naro-fominsk.another-world.com">Наро-Фоминск</a></li><li><a href="https://nevinnomyssk.another-world.com">Невинномысск</a></li><li><a href="https://nizhnevartovsk.another-world.com">Нижневартовск</a></li><li><a href="https://nizhnekamsk.another-world.com">Нижнекамск</a></li><li><a href="https://novgorod.another-world.com">Нижний Новгород</a></li><li><a href="https://nizhny-tagil.another-world.com">Нижний Тагил</a></li><li><a href="https://novomoskovsk.another-world.com">Новомосковск</a></li><li><a href="https://nsk.another-world.com">Новосибирск</a></li><li><a href="https://novoshahtinsk.another-world.com">Новошахтинск</a></li><li><a href="https://noginsk.another-world.com">Ногинск</a></li><li><a href="https://noyabrsk.another-world.com">Ноябрьск</a></li><li><a href="https://nyagan.another-world.com">Нягань</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">О</li><li><a href="https://odintsovo.another-world.com">Одинцово</a></li><li><a href="https://oktyabrskiy.another-world.com">Октябрьский</a></li><li><a href="https://omsk.another-world.com">Омск</a></li><li><a href="https://orsk.another-world.com">Орск</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">П</li><li><a href="https://pavlovsky-posad.another-world.com">Павловский Посад</a></li><li><a href="https://pvk.another-world.com">Первоуральск</a></li><li><a href="https://perm.another-world.com">Пермь</a></li><li><a href="https://petropavlovsk-kamchatskiy.another-world.com">Петропавловск-Камчатский</a></li><li><a href="https://podolsk.another-world.com">Подольск</a></li><li><a href="https://pskov.another-world.com">Псков</a></li><li><a href="https://pushkino.another-world.com">Пушкино</a></li><li><a href="https://pyatigorsk.another-world.com">Пятигорск</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Р</li><li><a href="https://ram.another-world.com">Раменское</a></li><li><a href="https://reutov.another-world.com">Реутов</a></li><li><a href="https://rossosh.another-world.com">Россошь</a></li><li><a href="https://rostov-na-donu.another-world.com">Ростов-на-Дону</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">С</li><li><a href="https://saki.another-world.com">Саки</a></li><li><a href="https://spb.another-world.com">Санкт-Петербург</a></li><li><a href="https://saransk.another-world.com">Саранск</a></li><li><a href="https://sevastopol.another-world.com">Севастополь</a></li><li><a href="https://severodvinsk.another-world.com">Северодвинск</a></li><li><a href="https://sergiyev-posad.another-world.com">Сергиев Посад</a></li><li><a href="https://serov.another-world.com">Серов</a></li><li><a href="https://serpuhov.another-world.com">Серпухов</a></li><li><a href="https://sibay.another-world.com">Сибай</a></li><li><a href="https://simferopol.another-world.com">Симферополь</a></li><li><a href="https://slantsy.another-world.com">Сланцы</a></li><li><a href="https://smolensk.another-world.com">Смоленск</a></li><li><a href="https://sovetsk.another-world.com">Советск</a></li><li><a href="https://sochi.another-world.com">Сочи</a></li><li><a href="https://stavropol.another-world.com">Ставрополь</a></li><li><a href="https://kanevskaya.another-world.com">Станица Каневская</a></li><li><a href="https://oskol.another-world.com">Старый Оскол</a></li><li><a href="https://strezhevoy.another-world.com">Стрежевой</a></li><li><a href="https://surgut.another-world.com">Сургут</a></li><li><a href="https://syktyvkar.another-world.com">Сыктывкар</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Т</li><li><a href="https://taganrog.another-world.com">Таганрог</a></li><li><a href="https://tambov.another-world.com">Тамбов</a></li><li><a href="https://tikhoretsk.another-world.com">Тихорецк</a></li><li><a href="https://vrtlt.ru/">Тольятти</a></li><li><a href="https://tomsk.another-world.com">Томск</a></li><li><a href="https://tyumen.another-world.com">Тюмень</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">У</li><li><a href="https://another-world73.ru/">Ульяновск</a></li><li><a href="https://usinsk.another-world.com">Усинск</a></li><li><a href="https://ussuriysk.another-world.com">Уссурийск</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Х</li><li><a href="https://khasavyurt.another-world.com">Хасавюрт</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Ч</li><li><a href="https://cheboksary.another-world.com">Чебоксары</a></li><li><a href="https://anotherworld174.ru/">Челябинск</a></li><li><a href="https://chernogorsk.another-world.com">Черногорск</a></li><li><a href="https://chita.another-world.com">Чита</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Щ</li><li><a href="https://schelkovo.another-world.com">Щелково</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Я</li><li><a href="https://yakutsk.another-world.com">Якутск</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Uzbekistan">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Т</li><li><a href="https://tashkent.another-world.com">Ташкент</a></li>
+                </ul>
+            </div>
+                                                <div class="awSiteSelect__town" id="Vietnam">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Д</li><li><a href="https://danang.another-world.com">Дананг</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="India">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">S</li><li><a href="https://surat.another-world.com">Surat</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Г</li><li><a href="https://guwahati.another-world.com">Гувахати</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Indonesia">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Д</li><li><a href="https://jakarta.another-world.com">Джакарта</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Malaysia">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">К</li><li><a href="https://kl.another-world.com">Куала-Лумпур</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">С</li><li><a href="https://cyberjaya.another-world.com">Сайберджая</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Thailand">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">С</li><li><a href="https://samui.another-world.com">Самуи</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Х</li><li><a href="https://hatyai.another-world.com">Хат Яй</a></li>
+                </ul>
+            </div>
+                                                <div class="awSiteSelect__town" id="Bahrain">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">М</li><li><a href="https://manama.another-world.com">Манама</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Egypt">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Ш</li><li><a href="https://sheikh-zayed.another-world.com">Шейх-Заид</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="India">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">М</li><li><a href="https://mumbai.another-world.com">Мумбаи</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Cameroon">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Д</li><li><a href="https://douala.another-world.com">Дуала</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Malaysia">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">П</li><li><a href="https://pj.another-world.com">Петалинг-Джая</a></li>
+                </ul>
+            </div>
+                                                <div class="awSiteSelect__town" id="Hungary">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">B</li><li><a href="https://budapest.another-world.com">Budapest</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Austria">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Б</li><li><a href="https://buchkirchen.another-world.com">Бургкирхен</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Л</li><li><a href="https://linz.another-world.com">Линц</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Bulgaria">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">С</li><li><a href="https://sofia.another-world.com">София</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Bosnia and Herzegovina">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">С</li><li><a href="https://sarajevo.another-world.com">Сараево</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Great Britain">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">К</li><li><a href="https://camberley.another-world.com">Кэмберли</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">О</li><li><a href="https://isleofman.another-world.com">Остров Мэн</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Э</li><li><a href="https://edinburgh.another-world.com">Эдинбург</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Germany">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">D</li><li><a href="https://deggendorf.another-world.com">Deggendorf</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Б</li><li><a href="https://berlin.another-world.com">Берлин</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">В</li><li><a href="https://werther.another-world.com">Вертер</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">К</li><li><a href="https://kassel.another-world.com">Кассель</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">М</li><li><a href="https://munich.another-world.com">Мюнхен</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Greece">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">А</li><li><a href="https://athens.another-world.com">Афины</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Georgia">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">К</li><li><a href="https://kutaisi.another-world.com">Кутаиси</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Т</li><li><a href="https://tbilisi.another-world.com">Тбилиси</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Spain">
+                <ul class=" awSiteSelect__columns2">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">А</li><li><a href="https://alicante.another-world.com">Аликанте</a></li><li><a href="https://alzira.another-world.com">Альсира</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Б</li><li><a href="https://benidorm.another-world.com">Бенидорм</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">К</li><li><a href="https://calpe.another-world.com">Кальпе</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">М</li><li><a href="https://murcia.another-world.com">Мурсия</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">П</li><li><a href="https://palma-de-mallorca.another-world.com">Пальма-де-Майорка</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">С</li><li><a href="https://mini-arena-spain.another-world.com">Сабадель</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Т</li><li><a href="https://tenerife.another-world.com">Тенерифе</a></li><li><a href="https://torrevieja.another-world.com">Торревьеха</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Italy">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">М</li><li><a href="https://milan.another-world.com">Милан</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Cyprus">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Н</li><li><a href="https://nicosia.another-world.com">Никосия</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Latvia">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Р</li><li><a href="https://riga.another-world.com">Рига</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Ю</li><li><a href="https://jurmala.another-world.com">Юрмала</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Moldova">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Б</li><li><a href="https://belci.another-world.com">Бельцы</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">К</li><li><a href="https://kishinev.another-world.com">Кишинев</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Netherlands">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Э</li><li><a href="https://eindhoven.another-world.com">Эйндховен</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Portugal">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Л</li><li><a href="https://www.vrcenter.pt/">Лиссабон</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">П</li><li><a href="https://porto.another-world.pt">Порто</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">С</li><li><a href="https://sao-miguel-azores.another-world.com">Сан-Мигел</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Romania">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">C</li><li><a href="https://cluj-napoca.another-world.com">Cluj-Napoca</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">К</li><li><a href="https://constanta.another-world.com">Констанца</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Serbia">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Б</li><li><a href="https://belgrade.another-world.com">Белград</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Slovakia">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Б</li><li><a href="https://bratislava.another-world.com">Братислава</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">П</li><li><a href="https://prievidza.another-world.com">Прьевидза</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Slovenia">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Л</li><li><a href="https://ljubljana.another-world.com">Любляна</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Croatia">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">З</li><li><a href="https://zagreb.another-world.com">Загреб</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Czech Republic">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">П</li><li><a href="https://prague.another-world.com">Прага</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="Estonia">
+                <ul class="">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Т</li><li><a href="https://lasnamae.another-world.com">Таллин</a></li><li><a href="https://tartu.another-world.com">Тарту</a></li>
+                </ul>
+            </div>
+                                                <div class="awSiteSelect__town" id="Canada">
+                <ul class=" awSiteSelect__columns2">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">B</li><li><a href="https://belleville.another-world.com">Belleville</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">S</li><li><a href="https://sarnia.another-world.com">Sarnia</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Б</li><li><a href="https://barrie.another-world.com">Барри</a></li><li><a href="https://burlington.another-world.com">Берлингтон</a></li><li><a href="https://brampton.another-world.com">Брамптон</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">В</li><li><a href="https://vernon.another-world.com">Вернон</a></li><li><a href="https://windsor.another-world.com">Виндзор</a></li><li><a href="https://winnipeg.another-world.com">Виннипег</a></li><li><a href="https://vaughan.another-world.com">Вон</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Г</li><li><a href="https://hamilton.another-world.com">Гамильтон</a></li><li><a href="https://guelph.another-world.com">Гуэлф</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">К</li><li><a href="https://yyc.another-world.com">Калгари</a></li><li><a href="https://kitchener.another-world.com">Китченер</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Л</li><li><a href="https://london.another-world.com">Лондон</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">М</li><li><a href="https://mansfield.another-world.com">Мансфилд</a></li><li><a href="https://mississauga.another-world.com">Миссиссога</a></li><li><a href="https://montreal.another-world.com">Монреаль</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Н</li><li><a href="https://north-york.another-world.com">Норт Йорк</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">О</li><li><a href="https://oakville.another-world.com">Оквилл</a></li><li><a href="https://ottawa.another-world.com">Оттава</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">П</li><li><a href="https://peterborough.another-world.com">Петербороу</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Р</li><li><a href="https://regina.another-world.com">Реджайна</a></li><li><a href="https://rimouski.another-world.com">Римуски</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">С</li><li><a href="https://sudbury.another-world.com">Садбери</a></li><li><a href="https://saskatoon.another-world.com">Саскатун</a></li><li><a href="https://saintjohn.another-world.com">Сент-Джон</a></li><li><a href="https://sault-ste-marie.another-world.com">Су-Сент-Мари</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">У</li><li><a href="https://whitby.another-world.com">Уитби</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Э</li><li><a href="https://edmonton.another-world.com">Эдмонтон</a></li>
+                </ul>
+            </div>
+                        <div class="awSiteSelect__town" id="USA">
+                <ul class=" awSiteSelect__columns2">
+                  <li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">A</li><li><a href="https://ashburn.another-world.com">Ashburn</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">B</li><li><a href="https://bridgewater.another-world.com">Bridgewater</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">C</li><li><a href="https://cleveland.another-world.com">Cleveland</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">А</li><li><a href="https://atlanta.another-world.com">Атланта</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">В</li><li><a href="https://waldorf.another-world.com">Вальдорф</a></li><li><a href="https://westminster.another-world.com">Вестминстер</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Й</li><li><a href="https://york.another-world.com">Йорк</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">К</li><li><a href="https://oldtownkissimmee.another-world.com">Киссимми</a></li><li><a href="https://conyers.another-world.com">Коньерс</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Н</li><li><a href="https://new-orleans.another-world.com">Новый Орлеан</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">С</li><li><a href="https://seattle.another-world.com">Сиэтл</a></li><li class="awSiteSelect__ulHeader awSiteSelect-ulHeader">Ч</li><li><a href="https://chincoteague.another-world.com">Чинкотиг</a></li>
+                </ul>
+            </div>
+                                </div>
+    </div>
+</div><div class="awCookie  active" data-allowed="1">
+    <div class="awCookie__top">
+    <span>Мы используем файлы cookie и другие технологии для вашего удобства пользования сайтом.</span>
+    <div class="awCookie__buttons">
+    <button onclick="showCookieCustom()">Настроить</button>
+    <button onclick=" acceptCookies()">Принять все</button>
+    </div>
+    </div>
+    <div class="awCookie__custom">
+        <div class="awCookie__item">
+            <div class="awCookie__item__top">
+                <span class="awCookie__item__header">Необходимые файлы cookie</span>
+                <span class="check active"><span></span></span>
+            </div>
+            <div class="awCookie__item__text">
+                <span>Они помогают сделать веб-сайт удобным, обеспечивая базовые функции Веб-сайт не сможет нормально функционировать без этих файлов.</span>
+            </div>
+        </div>
+        <div class="awCookie__item">
+            <div class="awCookie__item__top">
+                <span class="awCookie__item__header">Необязательные файлы cookie</span>
+                <span class="check active" id="notNecessaryCookie" onclick="toggleMe(this)"><span></span></span>
+            </div>
+            <div class="awCookie__item__text">
+                <span>Они помогают нам понять как вы взаимодействуете с веб-сайт, чтобы улучшать его. Информация анонимна.</span>
+            </div>
+        </div>
+        <div class="awCookie__buttons">
+        <button onclick=" acceptCookies(false)">Принять</button>
+        </div>
+    </div>
+</div>
+<div class="ml-popup__overlay ml-hidden" id="mlPopupOverlay">
+    <div class="ml-popup__wrapper">
+
+        <div class="ml-popup" id="mlPopup">
+
+            <button class="ml-popup__close" id="mlPopupClose" aria-label="Закрыть">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <path d="M15 5L5 15M5 5l10 10"/>
+                </svg>
+            </button>
+
+            <div class="ml-popup__left">
+                <h2 class="ml-popup__title">Игра начинается<br>по новым правилам</h2>
+                <p class="ml-popup__slogan">Дарим эмоции, открывая «Другие Миры»</p>
+                <p class="ml-popup__desc">Совместно с медиафутбольным клубом «Prime Squad» делимся 20% скидкой на посещение нашей VR арены по промокоду:</p>
+                <div class="ml-popup__promo"
+                     data-promo="PRIME"
+                     data-copied="Скопировано!"
+                     onclick="articlePromoCopy(this)">
+                    <span>PRIME</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 20" width="18" height="20">
+                        <path d="M12.2,0H8.3C6.6,0,5.2,0,4.1,0.1C3,0.3,2.1,0.6,1.3,1.3C0.6,2.1,0.3,3,0.1,4.1C0,5.2,0,6.6,0,8.4v5.8c0,1.5,0.9,2.8,2.2,3.3c-0.1-0.9-0.1-2.2-0.1-3.2V9.4V9.3c0-1.3,0-2.4,0.1-3.3c0.1-0.9,0.4-1.9,1.1-2.6c0.7-0.7,1.6-1,2.6-1.2c0.9-0.1,2-0.1,3.3-0.1l0.1,0h2.9l0.1,0c1.3,0,2.4,0,3.3,0.1C15.1,0.9,13.8,0,12.2,0z"/>
+                        <path d="M3.6,9.3c0-2.7,0-4.1,0.8-4.9c0.8-0.8,2.2-0.8,4.9-0.8h2.9c2.7,0,4.1,0,4.9,0.8C18,5.2,18,6.5,18,9.3v4.8c0,2.7,0,4.1-0.8,4.9c-0.8,0.8-2.2,0.8-4.9,0.8H9.4c-2.7,0-4.1,0-4.9-0.8c-0.8-0.8-0.8-2.2-0.8-4.9V9.3z"/>
+                    </svg>
+                </div>
+                <div class="ml-popup__redBtn">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/select-location" class="redButton" >
+            <div>
+            <span class="redButton__text">
+                <span>ЗАБРАТЬ СКИДКУ</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                </div>
+            </div>
+
+            <img class="ml-popup__logo" src="/images/prime_squad_white.png" alt="Prime Squad">
+            <img class="ml-popup__ball" src="/images/ball.webp" alt="">
+
+        </div>
+
+    </div>
+</div>
+    <div class="game__container">
+    <section class="game__header">
+        <ul class="bread-crumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+<a href="/" title="Главная" itemprop="item">
+<span itemprop="name">Главная</span>
+<meta itemprop="position" content="0"></a>
+</li>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+<a href="/games" title="Игры" itemprop="item">
+<span itemprop="name">Игры</span>
+<meta itemprop="position" content="1"></a>
+</li>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+<a href="/games/cubes" class="disabled" title="Шмутер: Кубики" itemprop="item">
+<span itemprop="name">Шмутер: Кубики</span>
+<meta itemprop="position" content="2"></a>
+</li>
+</ul>        <h1>Шмутер: Кубики</h1>
+    </section>
+    <section class="game__poster">
+        <img class="game__poster__image" src="/images/CubesPoster-scaled-1.webp" alt="">
+        <div class="game__poster-description">
+            <div class="game__poster-details">
+                <div class="game__poster-details__item">
+                    <p>2-20</p>
+                    <p>Количество<br>игроков</p>
+                                            <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                    </div>
+                <div class="game__poster-details__item">
+                    <p>от 6 лет</p>
+                    <p>Возрастное<br>ограничение</p>
+                </div>
+                <div class="game__poster-details__item">
+                    <p>60 минут</p>
+                    <p>Длительность<br>сеанса</p>
+                </div>
+                <div class="game__poster-details__item">
+                    <p>Шутер</p>
+                    <p>Жанр<br>игры</p>
+                </div>
+                                    <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                            </div>
+            <div class="game__poster-text"> Виртуальная реальность, созданная из кубиков. Здесь все именно так, как вы представляли - заснеженные горы, прекрасный лес, уютный дом!</div>
+            <div class="game__poster-button">
+                
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=cubes" class="redButton"  onclick="bookingOpen(&#039;game_details&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>            </div>
+        </div>
+    </section>
+            <section class="game__video">
+            <div class="game__video-poster" data-video="/custom/games/cubes/video/games.mp4"><div class="awGame__video-poster__shadow"></div> <img src="/images/ourGames__Cubes.webp" alt=""></div>
+            <div class="game__video-play"><img src="/images/play.svg" alt="play" data-video="/custom/games/cubes/video/games.mp4" onclick="openVideo(this)"></div>
+        </section>
+        <section class="game__about">
+        <h2>Сюжет игры</h2>
+        <div class="game__about__text">
+            <div>Вот он - прекрасный свободный мир, созданный из кубиков. Здесь все именно так, как вы представляли - заснеженные горы, прекрасный лес, уютный дом! Но неужели кто-то решил покуситься на эту идиллию? Кажется, пожаловали незваные гости. Пора вооружиться бластерами! </div>
+            <div>А порталы между локациями помогут тебе быстро перемещаться по карте. Знакомая кубическая графика и беспроводное перемещение по арене помогут игрокам ощутить себя частью любимой игры. Вы можете сражаться против друзей в режиме “каждый сам за себя” или играть «команда на команду».</div>
+        </div>
+    </section>
+        <section class="team red-bg">
+    <div class="team__container">
+                <div class="team__items">
+                        <div class="team__item">
+                <div class="team__color"></div>
+                <img src="/images/cubes-3.webp" alt="" loading="lazy">
+            </div>
+                        <div class="team__item">
+                <div class="team__color"></div>
+                <img src="/images/Cubes-1.webp" alt="" loading="lazy">
+            </div>
+                        <div class="team__item">
+                <div class="team__color"></div>
+                <img src="/images/cubes-2.webp" alt="" loading="lazy">
+            </div>
+                        <div class="team__item">
+                <div class="team__color"></div>
+                <img src="/images/Cubes-6.webp" alt="" loading="lazy">
+            </div>
+                        <div class="team__item">
+                <div class="team__color"></div>
+                <img src="/images/cubes.webp" alt="" loading="lazy">
+            </div>
+                        <div class="team__item">
+                <div class="team__color"></div>
+                <img src="/images/Cubes-5.webp" alt="" loading="lazy">
+            </div>
+                    </div>
+    </div>
+</section>    
+        <section class="game__before">
+        <div class="game__before__header"><h2> Что нужно знать перед игрой  </h2></div>
+        <div class="game__before__banner">
+            <picture>
+                <source srcset="/images/game_before_1300.webp" media="(min-width: 1200px)" >
+                <img src="/images/game_before_768.webp" alt="">
+            </picture>
+        </div>
+
+        <div class="game__before__time">
+            <div class="game__before__time__label">
+                <div><span>10 мин</span><span>инструктаж, подготовка к игре</span></div>
+                <div><img src=" /images/stik.svg"></div>
+            </div>
+            <div class="game__before__time__label">
+                <div><span>45 мин</span><span>игра в виртуальной реальности</span></div>
+                <div>
+                    <picture>
+                        <source srcset="/images/stik.svg" media="(min-width: 768px)" >
+                        <img src="/images/stik45.svg" alt="">
+                    </picture>
+                </div>
+            </div>
+            <div class="game__before__time__label">
+                <div><span>5 мин</span><span>фотография на память</span></div>
+                <div>
+                    <picture>
+                        <source srcset="/images/stik.svg" media="(min-width: 768px)" >
+                        <img src="/images/stik5.svg" alt="">
+                    </picture>
+                </div>
+            </div>
+            <div class="game__before__arrive">
+                <div><img src="/images/info-icon.svg" alt="i"></div>
+                <div>Рекомендуем приходить за 10-15 минут до начала сеанса, чтобы заполнить анкету и посмотреть обучающее видео. На арене можно играть, используя сменную обувь или в чистых носках.</div>
+            </div>
+            <div class="game__before__time__bar">
+                <picture>
+                    <source srcset="/images/bar-desktop.svg" media="(min-width: 1300px)" >
+                    <source srcset="/images/bar-laptop.svg" media="(min-width: 768px)" >
+                    <img src="/images/bar-mobile.svg" alt="">
+                </picture>
+            </div>
+        </div>
+    </section>
+    </div>
+<section class="game__slider blue-bg">
+    <h2>Игры</h2>
+<section class="games swiper" id="games-swiper">
+    <div class="swiper-wrapper">                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVE</div>
+                                            <div class="games__play" data-video="/custom/games/smeshariki/video/6a855f14e10d3_SM-720.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/6a72ed90e8f01_Games.webp" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Смешарики: Другие Миры</div>
+                <div class="games__description">После загадочного сбоя миры начинают разрушаться, а воспоминания Смешариков исчезают. Помоги Смешарикам найти потерянные артефакты и восстановить вселенную.</div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>2-6</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 6 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>45 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Приключение</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=smeshariki" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/smeshariki" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVE</div>
+                                            <div class="games__play" data-video="/custom/games/sanctum-riders/video/6a79942228fb8_Sanctum%20Raiders%20RU%20(1).mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/6a72ea76002aa_Games.webp" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Расхитители сокровищ</div>
+                <div class="games__description">Вы — команда охотников за сокровищами, отправившаяся в экспедицию к древнему храму майя, скрытому в глубине джунглей. По легенде, внутри пирамиды спрятаны могущественный артефакт и несметные сокровища. Но храм защищён таинственными механизмами, ловушками и загадками.</div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>2-5</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 12 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>30 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Приключение</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=sanctum-riders" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/sanctum-riders" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVE</div>
+                                            <div class="games__play" data-video="/custom/games/dance/video/kids.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/6993efc2dec79_Охота_ЗагадочнаяБашня_1000x1000_background.jpeg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Загадочная башня: Охота</div>
+                <div class="games__description">Группа охотников за привидениями прибывает в заброшенный особняк,где потусторонние существа заполонили это место, и теперь вам нужно освободить дом из их цепких лап!</div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>2-20</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 6 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>60 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Приключение</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=ghost_mansion" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/ghost_mansion" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVP</div>
+                                            <div class="games__play" data-video="/custom/games/forts/video/shmooter-forts.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/shmooter-forts.webp" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Шмутер: Форты</div>
+                <div class="games__description">Захватывайте базу и разрушайте постройки. Перемещайтесь между площадками и используйте автобус как укрытие. Оттачивайте меткость и реакцию. Почувствуйте атмосферу веселья и станьте чемпионом в незабываемом VR-приключении!</div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>2-20</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 6 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>60 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Шутер</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=forts" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/forts" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVE</div>
+                                            <div class="games__play" data-video="/custom/games/forts/video/shmooter-forts.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/6993f05acd04d_Шмутер Вторжение.jpeg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Шмутер: Вторжение</div>
+                <div class="games__description">Пришельцы хотят захватить уже знакомые просторы острова. Сможете ли вы дать отпор? Выбирайте оружие, прокачивайте способности и прорвитесь сквозь волны роботов и пришельцев, чтобы уничтожить главного босса-титана в эпичном финале!</div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>2-20</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 6 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>60 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Шутер</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=shmooter-invasion" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/shmooter-invasion" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVP</div>
+                                            <div class="games__play" data-video="/custom/games/kernel/video/kernelRU.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/6993fa39d9da5_Bunker (1000x1000).jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Кернел: Бункер</div>
+                <div class="games__description">Две команды столкнутся на территории заброшенного бункера, где происходит необычная аномалия - таинственное черное солнце, которое изменяет законы физики.</div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>4-14</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 12 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>60 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Шутер</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=kernel" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/kernel" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVE</div>
+                                            <div class="games__play" data-video="/custom/games/colony_code_red/video/Starbase-expedition.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/ourGames__Colony.webp" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Старбейз: Экспедиция</div>
+                <div class="games__description">Вы - часть ротации колонистов, отправленных на станцию исследователей глубокого космоса на планете Алекта, но по прибытию вы столкнетесь с кошмаром, скрывающимся внутри.</div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>1-4</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 12 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>60 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Sci-Fi</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=colony_code_red" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/colony_code_red" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVP</div>
+                                            <div class="games__play" data-video="/custom/games/shmooter/video/shmooter.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/ourGames__Shmooter.webp" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Шмутер: Небоскребы</div>
+                <div class="games__description">Играйте вместе с друзьями в режиме команда на команду, совершенствуйте свои навыки стрельбы и реакции, собирайте бонусы, чтобы стать сильнее и перехитрите соперников.</div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>2-20</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 6 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>60 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Шутер</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=shmooter" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/shmooter" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVP</div>
+                                            <div class="games__play" data-video="/custom/games/cubes/video/games.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/IslandAssaultPoster-scaled-1.webp" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Шмутер: Осада Острова</div>
+                <div class="games__description">Вооружитесь спрятанным на локациях оружием и защитой, обороняйте остров от чужаков. </div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>2-20</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 6 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>60 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Шутер</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=island_assault" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/island_assault" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVP</div>
+                                            <div class="games__play" data-video="/custom/games/cubes/video/games.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/ourGames__Cubes.webp" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Шмутер: Кубики</div>
+                <div class="games__description">Виртуальная реальность, созданная из кубиков. Здесь все именно так, как вы представляли - заснеженные горы, прекрасный лес, уютный дом!</div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>2-20</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 6 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>60 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Шутер</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=cubes" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/cubes" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVP</div>
+                                            <div class="games__play" data-video="/custom/games/space_battle_2/video/vr-games.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/Space_Battle_02-scaled-1.webp" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Шмутер: Космическая Битва</div>
+                <div class="games__description">Вокруг бескрайний космос, холодные и далекие звезды, а на космической станции продолжаются сражения. Инопланетные завоеватели пытаются захватить вашу станцию.</div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>2-20</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 6 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>60 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Шутер</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=space_battle" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/space_battle" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVE</div>
+                                            <div class="games__play" data-video="/custom/games/safe_night/video/Safe-Night.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/6993fa68d1f15_Safe Night 1000x1000.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Ночь Живых Мертвецов</div>
+                <div class="games__description">Радиация испепелила все живое, превратив тех, кто уцелел, в облученных и мутировавших зомби. Вашей команде нужно выжить и дождаться эвакуации.</div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>2-4</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 12 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>60 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Шутер</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=safe_night" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/safe_night" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVE</div>
+                                            <div class="games__play" data-video="/custom/games/dance/video/kids.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/6993eee89ab4c_Танцы_ЗагадочнаяБашня_1000x1000_background.jpeg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Загадочная башня: Танцы</div>
+                <div class="games__description">В заброшенном особняке, полном милых привидений, начинается вечеринка! Пришло время хорошенько подвигаться. Танцуйте и веселитесь. А забавные привидения станут вашей группой поддержки. </div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>2-20</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 6 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>60 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Приключение</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=dance" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/dance" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVE</div>
+                                            <div class="games__play" data-video="/custom/games/dance/video/kids.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/6993ef832fa8f_Рыбалка_без текста (обрез).jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Загадочная башня: Рыбалка</div>
+                <div class="games__description">Захватывающая игра для детей, в которой участники должны ловить разноцветных рыбок.Соревнуйтесь с другими игроками, стараясь поймать как можно больше различных видов рыб.</div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>2-20</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 6 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>60 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Приключение</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=fishing" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/fishing" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVP</div>
+                                            <div class="games__play" data-video="/custom/games/kernel_raven/video/kernek-ravens.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/6993fa1f59fca_Kernel Raven Full Poster (1000x1000).jpeg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Кернел: Вороны</div>
+                <div class="games__description">Огромная карта с множеством укрытий и тактических возможностей. Реалистичная графика, от которой захватывает дух и высочайшая детализация никого не оставит равнодушным. </div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>4-14</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 12 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>60 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Шутер</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=kernel_raven" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/kernel_raven" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVP</div>
+                                            <div class="games__play" data-video="/custom/games/space_battle_2/video/vr-games.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/space-battle-2.webp" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Шмутер: Космическая Битва 2</div>
+                <div class="games__description">Почувствуй себя завоевателем, делающим первые шаги на неизведанных землях.Утоли свой голод первооткрывателя и докажи, что космос твой!</div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>2-20</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 6 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>60 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Шутер</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=space_battle_2" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/space_battle_2" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVE</div>
+                                            <div class="games__play" data-video="/custom/games/starbase-survival/video/Starbase-survival.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/6993fb0f1e60a_3_StarbaseSwarm -постер.jpeg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Старбейз: Рой</div>
+                <div class="games__description">Вы и ваша команда оказываются на платформе, окруженной неизвестными формами жизни, эволюционировавшими в нечто опасное. </div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>1-4</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 12 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>60 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Sci-Fi</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=starbase-survival" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/starbase-survival" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVP</div>
+                                            <div class="games__play" data-video="/custom/games/kernel/video/kernelRU.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/6993f9970dde4_Kernel the dream_1000х1000_background.jpeg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Кернел: Сны</div>
+                <div class="games__description">Жёлтые стены, гул ламп и бесконечные коридоры. Эта карта — как сон, из которого не проснуться. Только стрельба укажет путь.</div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>1-12</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 12 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>60 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Шутер</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=kernel-dreams" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/kernel-dreams" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVP</div>
+                                            <div class="games__play" data-video="/custom/games/kernel/video/kernelRU.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/6993f9b5de1d5_Sanctum (1000x1000).jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Кернел: Святилище</div>
+                <div class="games__description">На месте раскопок древнего храма Майя развернулась борьба за артефакт, испускающий аномальную энергию. Каменные коридоры, обрушенные своды и густая растительность создают идеальные условия для напряжённых PvP-сражений.</div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>1-12</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 12 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>60 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Шутер</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=kernel-sanctum" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/kernel-sanctum" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVP</div>
+                                            <div class="games__play" data-video="/custom/games/kernel/video/kernelRU.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/6993f9c491230_Borealis (1000x1000).jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Кернел: Борей</div>
+                <div class="games__description">Покинутый корабль навсегда застыл во льдах, став мрачным напоминанием о неудачных экспериментах. Теперь он — арена ожесточённых боёв, где скрип металла и завывание ветра заглушают шаги противника.  Найди укрытие, держи равновесие — и не дай льду стать твоей могилой.</div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>1-12</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 12 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>60 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Шутер</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=kernel-borealis" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/kernel-borealis" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVP</div>
+                                            <div class="games__play" data-video="/custom/games/kernel/video/kernelRU.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/6993fa00025fc_Confrontation_Poster_1000x1000.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Кернел: Фабрика</div>
+                <div class="games__description">Карта предлагает динамичные бои в индустриальных руинах старой фабрики: высокая плотность укрытий, сложная вертикальность и ограниченная видимость заставляют играть агрессивно и осмотрительно. Заброшенные производственные цеха и ржавые переходы превращают каждую перестрелку в напряжённую схватку за выживание.</div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>1-12</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 12 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>60 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Шутер</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=kernel-cf-factory" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/kernel-cf-factory" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVE</div>
+                                            <div class="games__play" data-video="/custom/games/dance/video/kids.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/6993ef9e14868_Шахтеры_без текста (обрез).jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Загадочная Башня: Шахтеры</div>
+                <div class="games__description">На пути к вершине башни игроки проходят сквозь заброшенную шахту. Призрак горняка заставляет их &quot;немного&quot; поработать.</div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>2-20</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 6 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>60 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Приключения</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=miners" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/miners" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVE</div>
+                                            <div class="games__play" data-video="/custom/games/kernel-survival-protocol/video/6a0d4a8f55688_693bd3d2f2ee8_ZOMBIE_4k_RUS.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/6993f9e7b241a_Кернел Миссия выжить.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Миссия Выжить</div>
+                <div class="games__description">Игроки сталкиваются с жуткими противниками, сложными задачами и напряжённой атмосферой, которая заставляет испытывать чувство тревоги и опасности.</div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>4-14</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 12 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>60 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Шутер</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=kernel-survival-protocol" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/kernel-survival-protocol" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVE</div>
+                                            <div class="games__play" data-video="/custom/games/tavern/video/6a0d4b30af619_693b95a7a0011_Tavern.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/6993fa7b3557b_Таверна_1000x1000_background.jpeg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Таверна</div>
+                <div class="games__description">Погрузитесь в шумную атмосферу таверны фэнтезийного города! Готовьте блюда, разливайте напитки и быстро обслуживайте гостей. Чем слаженнее работает команда, тем больше довольных посетителей. Успех зависит от командной работы и грамотного распределения ролей!</div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>2-20</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 6 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>60 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Приключения</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=tavern" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/tavern" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVP</div>
+                                            <div class="games__play" data-video="/custom/games/shmooter/video/shmooter.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/6996e83c97040_Anubis постер без текста.jpeg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Шмутер: Анубис</div>
+                <div class="games__description">Древние пирамиды Египта пробудились под натиском инопланетного вторжения! Сразитесь с пришельцами среди песчаных дюн и древнего города, обороняя Землю от волн захватчиков. Используйте порталы, смертельные лучи и ракетные установки, чтобы уничтожить врагов!</div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>2-20</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 6 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>60 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Шутер</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=smooter-anubis" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/smooter-anubis" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                    <div class="games__container swiper-slide">
+                <div class="games__picture">
+                    <div class="games__type">PVE</div>
+                                            <div class="games__play" data-video="/custom/games/dance/video/kids.mp4" onclick="openVideo(this)">
+                            <svg viewBox="0 0 24 28" xmlns="http://www.w3.org/2000/svg"><path d="M0 27.3036V0.696415C0 0.387698 0.334886 0.19535 0.601549 0.350903L23.4077 13.6545C23.6723 13.8088 23.6723 14.1912 23.4077 14.3455L0.601548 27.6491C0.334886 27.8046 0 27.6123 0 27.3036Z"/></svg>
+                        </div>
+                                        <div class="games__shadow">
+                        <div class="games__border">
+                            <div class="games__image"><div></div><img src="/images/69a7e4deca813_3 (2).png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games__title">Урожай</div>
+                <div class="games__description">На дедушкиной ферме поспел урожай! Соревнуйтесь с друзьями - кто быстрее всех соберет ягоды и фрукты в корзинки. Милые питомцы с радостью помогут вам, но у каждого из них свой непростой характер. </div>
+                <div class="games__details">
+                    <div class="games__details__item">
+                        <p>2-20</p>
+                        <p>Количество игроков</p>
+                                                    <div class="game__asterisk" onclick="showAsterisk(this,'click')" onmouseover="showAsterisk(this,'mouseover')" onmouseleave="hideAsterisk(this,'mouseleave')"></div>
+                                            </div>
+                    <div class="games__details__item">
+                        <p>от 6 лет</p>
+                        <p>Возрастное ограничение</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>60 минут</p>
+                        <p>Длительность сеанса</p>
+                    </div>
+                    <div class="games__details__item">
+                        <p>Приключение</p>
+                        <p>Жанр игры</p>
+                    </div>
+                                            <div class="game__asterisk__info" id="gameAsterisk">Максимальное количество игроков зависит от VR-арены</div>
+                                    </div>
+                <div class="games__buttons">
+                    
+
+<div class="redButton__wrapper" onmouseenter="btnSpan(this)">
+    <a href="/buy?game=harvest" class="redButton"  onclick="bookingOpen(&#039;game_list&#039;)">
+            <div>
+            <span class="redButton__text">
+                <span>Забронировать</span>
+                <span></span>
+            </span>
+        </div>
+        <div>
+        <span class="redButton__arrows">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.8 16"><path d="M9.8,1l7,7l-7,7"/><path  d="M0.7,1l7,7l-7,7"/></svg></span>
+        </span>
+        </div>
+    </a></div>                    <a href="/games/harvest" class="games__more">Подробнее</a>
+                </div>
+            </div>
+                </div>
+            <div class="slider__prev" id="gameSliderPrev">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+        <g>
+            <path  d="M8,48c-4.4,0-8-3.6-8-8l0-28.3c0-1.1,0.4-2.1,1.2-2.8l7.7-7.7C9.6,0.4,10.6,0,11.7,0L40,0c4.4,0,8,3.6,8,8v32c0,4.4-3.6,8-8,8H8z"/>
+            <path class="p01" d="M8,47.5c-4.1,0-7.5-3.4-7.5-7.5l0-28.3c0-0.9,0.4-1.8,1-2.5l7.7-7.7c0.7-0.7,1.5-1,2.5-1l28.3,0c4.1,0,7.5,3.4,7.5,7.5v32c0,4.1-3.4,7.5-7.5,7.5H8z"/>
+        </g>
+        <path class="p02" d="M26,19.3L21.3,24l4.7,4.7"/>
+    </svg>
+</div>
+<div class="slider__next" id="gameSliderNext">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+        <g>
+            <path d="M40,0c4.4,0,8,3.6,8,8v28.3c0,1.1-0.4,2.1-1.2,2.8l-7.7,7.7c-0.8,0.8-1.8,1.2-2.8,1.2H8c-4.4,0-8-3.6-8-8L0,8c0-4.4,3.6-8,8-8L40,0z"/>
+            <path class="p01" d="M40,0.5c4.1,0,7.5,3.4,7.5,7.5v28.3c0,0.9-0.4,1.8-1,2.5l-7.7,7.7c-0.7,0.7-1.5,1-2.5,1H8c-4.1,0-7.5-3.4-7.5-7.5l0-32c0-4.1,3.4-7.5,7.5-7.5L40,0.5z"/>
+        </g>
+        <path class="p02" d="M22,19.3l4.7,4.7L22,28.7"/>
+    </svg>
+</div>
+<div class="slider__shadow-left"></div>
+<div class="slider__shadow-right"></div>
+<div class="slider__scroll">
+    <img src="/images/scroll-hand.svg" alt="scroll" loading="lazy">
+</div>    </section>
+</section>
+    <svg width="0" height="0" preserveAspectRatio="none">
+        <defs>
+            <clipPath id="gameBeforeCut" clipPathUnits="objectBoundingBox" transform="scale(0.00090, 0.001655)">
+                <path d="M1086.7,0c0,0,23.3-0.6,23.3,17.8s0,560.6,0,560.6s1,21.6-20.9,21.6S22,600,22,600s-22,1.4-22-21s0-446.1,0-446.1s0.6-17.9,23.4-17.9s429.7,0,429.7,0s6.5,1.1,11.7-4c5.2-5.1,108.5-108.3,108.5-108.3S575.5,0,585.1,0S1086.7,0,1086.7,0z"
+                      style="fill:none;" />
+            </clipPath>
+        </defs>
+    </svg>
+    <svg width="0" height="0" preserveAspectRatio="none">
+        <defs>
+            <clipPath id="gamesImage" clipPathUnits="objectBoundingBox" transform="scale(0.00323, 0.0050)">
+                <path d="M0 44.3093C0 40.9956 2.68629 38.3093 6 38.3093H57.1502C59.0745 38.3093 60.882 37.3863 62.0104 35.8276L86.1498 2.48167C87.2782 0.922942 89.0857 0 91.01 0H305C308.314 0 311 2.68629 311 6V194C311 197.314 308.314 200 305 200H6C2.68629 200 0 197.314 0 194V44.3093Z"
+                      style="fill:none;" />
+            </clipPath>
+        </defs>
+    </svg>
+<footer itemscope itemtype="https://schema.org/Organization">
+            <div class="footer__before"><div></div></div>
+        <div class="footer__body multi">
+
+        <div class="footer__logo"></div>
+
+        <div class="footer__left">
+            <meta itemprop="name" content="Другие Миры">                            <div class="footer__addresses swiper">
+  <div class="swiper-wrapper">
+     <div class="footer__addresses__item swiper-slide">
+     <div class="footer__address" itemprop="address" itemscope="" itemtype="https://schema.org/PostalAddress">
+    <span itemprop="postalCode">455049</span>, г.
+    <span itemprop="addressLocality">Магнитогорск</span>,
+    <span class="footer__street">пр.<span itemprop="streetAddress">Карла Маркса, 172</span></span>
+</div>
+       <div class="footer__phone" itemprop="telephone"><a onclick="gms('phone_click')" href="tel:+79023062090">+7 (902) 306-20-90</a></div>
+       <div class="footer__email" itemprop="email"><a onclick="gms('email_click')" href="mailto:magnitogorsk.arena@another-world.com">magnitogorsk.arena@another-world.com</a></div>
+   </div>
+     <div class="footer__addresses__item swiper-slide">
+     <div class="footer__address" itemprop="address" itemscope="" itemtype="https://schema.org/PostalAddress">
+    <span itemprop="postalCode">455045</span>, г.
+    <span itemprop="addressLocality">Магнитогорск</span>,
+    <span class="footer__street">пр.<span itemprop="streetAddress">Карла Маркса, 167</span></span>
+</div>
+       <div class="footer__phone" itemprop="telephone"><a onclick="gms('phone_click')" href="tel:+79023062090">+7 (902) 306-20-90</a></div>
+       <div class="footer__email" itemprop="email"><a onclick="gms('email_click')" href="mailto:magnitogorsk.arena@another-world.com">magnitogorsk.arena@another-world.com</a></div>
+   </div>
+    </div>
+  <div class="footer__addresses__navigation">
+      <div class="footer__prev" id="footer-prev"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 10.6665L2.33333 5.99984L7 1.33317" stroke="white" stroke-width="2"/></svg></div>
+      <div class="footer__next" id="footer-next"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 10.6665L5.66667 5.99984L1 1.33317" stroke="white" stroke-width="2"/></svg></div>
+      <div class="swiper-pagination"  id="footer-pagination"></div>
+  </div>
+
+</div>                    </div>
+        <div class="footer__middle multi">
+            <ul>
+                                        <li><a href="/games">Игры</a></li>
+                                        <li><a href="/birthday">День рождения</a></li>
+                                        <li><a href="/corporate">Корпоратив</a></li>
+                                        <li><a href="/graduation">Выпускной</a></li>
+                                        <li><a href="/new-year">Новый год</a></li>
+                                        <li><a href="/#tarify">Тарифы</a></li>
+                                        <li><a href="/news">Новости</a></li>
+                                        <li><a href="/about">О нас</a></li>
+                                        <li><a href="/faq">FAQ</a></li>
+                                        <li><a href="/vr-certificate">Сертификаты</a></li>
+                                        <li><a onclick="gms('franchise_click')" href="https://business.another-world.com/" target="_blank">Франшиза</a></li>
+                                        <li><a href="/contact">Контакты</a></li>
+                            </ul>
+        </div>
+            </div>
+    <div class="footer__bottom">
+        <div>© ООО «Другие Миры», 2024-2026</div>
+        <div class="footer__bottom-menu">
+            <div>
+                <ul>
+                                        <li><a href="/agreement">Пользовательское соглашение</a></li>
+                                        <li><a href="/confidential">Политика конфиденциальности</a></li>
+                                        <li><a href="/gdpr">Политика персональных данных</a></li>
+                                    </ul>
+            </div>
+            <div>
+                <ul>
+                                                <li><a href="/company">Реквизиты</a></li>
+                                                <li><a href="/payment-rules">Правила оплаты</a></li>
+                                                <li><a href="/purchase-returns">Возврат товара</a></li>
+                                    </ul>
+            </div>
+                    </div>
+    </div>
+</footer>
+<div class="cursor preload"></div>
+</body>
+<script type="text/javascript" src="/js/functions.min.js"></script>
+<link rel="stylesheet" href="/css/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="/css/air-datepicker.min.css"/>
+<script type="text/javascript" src="/js/air-datepicker.min.js"></script>
+<script type="text/javascript" src="/js/swiper-bundle.min.js"></script>
+<script>window.chooseLocation = "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043b\u043e\u043a\u0430\u0446\u0438\u044e";</script>
+<script type="text/javascript" src="/js/app.min.js"></script>
+<div class="popUp-video__wrapper">
+    <div class="popUp-video__container">
+        <video width="90%" height="90%" controls="controls" poster="">
+            <source type="video/mp4">
+        </video>
+    </div>
+    <div class="popUp-video__close">
+        <div class="popUp-video__close__container">
+            <img src="/images/aw_logo.svg" alt="Another World">
+            <div onclick="closePopUpVideo(this)"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 272.1 272.1">
+                    <path class="st0" d="M272.1,136.1c0,75.1-60.9,136.1-136.1,136.1S0,211.2,0,136.1S60.9,0,136.1,0S272.1,60.9,272.1,136.1zM166.3,79.9L136,110.6L105.8,80c-6.9-7-18.1-7-25.1,0c-7,7-7.1,18.3-0.2,25.2L111,136l-30.4,30.8c-6.9,7-6.9,18.4,0.1,25.4c7,7,18.2,7,25.2-0.1l30.3-30.7l30.2,30.6c6.9,7,18.1,7,25.1,0c7-7,7.1-18.3,0.2-25.2l-30.4-30.9l30.4-30.8c6.9-7,6.9-18.4-0.1-25.4C184.5,72.9,173.2,72.9,166.3,79.9L166.3,79.9z"/>
+                </svg></div>
+        </div>
+    </div>
+    <div class="popUp-video__youTube">
+        <a rel="nofollow" target="_blank">Посмотреть на <img src="/images/YouTube_full.webp" alt="" loading="lazy"> </a>
+    </div>
+
+</div></html>

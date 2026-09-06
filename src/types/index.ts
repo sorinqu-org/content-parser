@@ -73,6 +73,8 @@ export interface PageRoute {
 export interface StructureResult {
   rootUrl: string;
   sitemaps: string[];
+  sitemapUrls?: string[];
+  endpoints?: string[];
   routes: PageRoute[];
   internalLinksCount: number;
   externalLinksCount: number;
@@ -149,6 +151,8 @@ export interface ParseOptions {
   downloadAssets?: boolean;
   outputDir?: string;
   crawlPages?: boolean;
+  crawlAllRoutes?: boolean;
+  savePages?: boolean;
   maxPages?: number;
   maxDepth?: number;
   viewports?: Array<'desktop' | 'mobile' | 'tablet' | 'fullpage'>;

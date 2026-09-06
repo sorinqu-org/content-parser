@@ -112,11 +112,11 @@ export async function parseUrl(options: ParseOptions): Promise<ParseResult> {
     }
 
     // 5. Extract Structure & Crawl
-    if (targets.includes('structure')) {
+    if (targets.includes('structure') || options.crawlAllRoutes || options.crawlPages) {
       try {
         result.structure = await extractStructure(session.page, url, {
           maxDepth: options.maxDepth ?? 2,
-          maxPages: options.maxPages ?? 10
+          maxPages: options.maxPages !== undefined ? options.maxPages : (options.crawlAllRoutes ? 0 : 50)
         });
         result.summary.routesCount = result.structure.routes.length;
       } catch (e: any) {
