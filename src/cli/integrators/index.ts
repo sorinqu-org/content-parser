@@ -2,9 +2,9 @@ import { addClaudeCodeMcp } from './claude.js';
 import { addCursorMcp } from './cursor.js';
 import { addCodexMcp } from './codex.js';
 import { addAntigravityMcp } from './antigravity.js';
-import { addHarnessMcp } from './harness.js';
+import { addHermesMcp } from './hermes.js';
 
-export type AgentTarget = 'claude' | 'codex' | 'cursor' | 'antigravity' | 'harmess' | 'frontharness' | 'all';
+export type AgentTarget = 'claude' | 'codex' | 'cursor' | 'antigravity' | 'hermes' | 'all';
 
 export interface IntegrationResult {
   target: string;
@@ -30,7 +30,7 @@ export async function addMcpToTarget(target: string): Promise<IntegrationResult[
     runTarget('cursor', addCursorMcp);
     runTarget('codex', addCodexMcp);
     runTarget('antigravity', addAntigravityMcp);
-    runTarget('harmess', addHarnessMcp);
+    runTarget('hermes', addHermesMcp);
     return results;
   }
 
@@ -55,18 +55,18 @@ export async function addMcpToTarget(target: string): Promise<IntegrationResult[
       runTarget('antigravity', addAntigravityMcp);
       break;
 
+    case 'hermes':
+    case 'hermes-agent':
     case 'harmess':
     case 'frontharness':
-    case 'front-harness':
-    case 'harness':
-      runTarget('harmess', addHarnessMcp);
+      runTarget('hermes', addHermesMcp);
       break;
 
     default:
       results.push({
         target: normalized,
         success: false,
-        message: `Unknown agent target: "${target}". Available: claude, codex, cursor, antigravity, harmess, all.`
+        message: `Unknown agent target: "${target}". Available: claude, codex, cursor, antigravity, hermes, all.`
       });
   }
 

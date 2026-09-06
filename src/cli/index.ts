@@ -30,7 +30,7 @@ program
 
 program
   .command('add [agent]')
-  .description('Configure content-parser MCP into an AI agent (claude, codex, cursor, antigravity, harmess, all)')
+  .description('Configure content-parser MCP into an AI agent (claude, codex, cursor, antigravity, hermes, all)')
   .action(async (agent) => {
     await handleAddCommand(agent);
   });

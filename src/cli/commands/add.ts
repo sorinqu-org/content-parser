@@ -11,7 +11,7 @@ export async function handleAddCommand(agent?: string): Promise<void> {
     console.log(`  ${pc.cyan('2)')} cursor       ${pc.dim('(Cursor IDE ~/.cursor/mcp.json)')}`);
     console.log(`  ${pc.cyan('3)')} codex        ${pc.dim('(OpenAI Codex CLI & ~/.codex/config.toml)')}`);
     console.log(`  ${pc.cyan('4)')} antigravity  ${pc.dim('(Google Antigravity ~/.gemini/antigravity/mcp_config.json)')}`);
-    console.log(`  ${pc.cyan('5)')} harmess      ${pc.dim('(FrontHarness ~/.config/frontharness/config.yaml)')}`);
+    console.log(`  ${pc.cyan('5)')} hermes       ${pc.dim('(Hermes Agent CLI & ~/.hermes/config.yaml)')}`);
     console.log(`  ${pc.cyan('6)')} all          ${pc.dim('(Install into all detected AI agents)')}\n`);
 
     const rl = readline.createInterface({
@@ -31,7 +31,7 @@ export async function handleAddCommand(agent?: string): Promise<void> {
       '2': 'cursor',
       '3': 'codex',
       '4': 'antigravity',
-      '5': 'harmess',
+      '5': 'hermes',
       '6': 'all'
     };
 

@@ -21,6 +21,10 @@ describe('Content Parser Test Suite', () => {
     assert.strictEqual(res.length, 1);
     assert.strictEqual(res[0].success, true);
 
+    const hermesRes = await addMcpToTarget('hermes');
+    assert.strictEqual(hermesRes.length, 1);
+    assert.strictEqual(hermesRes[0].success, true);
+
     const unknown = await addMcpToTarget('nonexistent');
     assert.strictEqual(unknown[0].success, false);
   });

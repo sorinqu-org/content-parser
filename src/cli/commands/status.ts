@@ -50,7 +50,7 @@ export function handleStatusCommand(): void {
   checkFile('Cursor IDE', path.join(os.homedir(), '.cursor', 'mcp.json'), 'content-parser');
   checkFile('OpenAI Codex', path.join(os.homedir(), '.codex', 'config.toml'), 'content-parser');
   checkFile('Antigravity', path.join(os.homedir(), '.gemini', 'antigravity', 'mcp_config.json'), 'content-parser');
-  checkFile('FrontHarness', path.join(os.homedir(), '.config', 'frontharness', 'config.yaml'), 'content-parser');
+  checkFile('Hermes Agent', path.join(os.homedir(), '.hermes', 'config.yaml'), 'content-parser');
 
   console.log();
 }

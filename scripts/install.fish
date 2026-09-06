@@ -68,6 +68,6 @@ echo
 echo "Usage:"
 echo "  content-parser start [--stdio]      # Start MCP server"
 echo "  content-parser stop                 # Stop background daemon"
-echo "  content-parser add [agent]          # Add to claude, codex, cursor, antigravity, harmess, all"
+echo "  content-parser add [agent]          # Add to claude, codex, cursor, antigravity, hermes, all"
 echo "  content-parser parse <url>          # Extract assets directly via CLI"
 echo "  content-parser status               # Check status and integrations"

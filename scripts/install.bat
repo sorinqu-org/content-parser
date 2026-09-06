@@ -48,7 +48,7 @@ echo Run 'content-parser --help' to get started.
 echo Commands:
 echo   content-parser start [--stdio]
 echo   content-parser stop
-echo   content-parser add [agent]
+echo   content-parser add [agent] (claude, cursor, codex, antigravity, hermes, all)
 echo   content-parser parse ^<url^>
 echo   content-parser status
 pause

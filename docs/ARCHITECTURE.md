@@ -51,4 +51,4 @@ The `src/cli/integrators/` package updates agent configurations:
 - **Cursor IDE**: Updates `~/.cursor/mcp.json`.
 - **OpenAI Codex**: Updates `~/.codex/config.toml` using `smol-toml`.
 - **Google Antigravity**: Updates `~/.gemini/antigravity/mcp_config.json` and `~/.gemini/config/mcp_config.json`.
-- **FrontHarness**: Updates `~/.config/frontharness/config.yaml` using `yaml`.
+- **Hermes Agent**: Invokes `hermes mcp add content-parser --command content-parser --args start --stdio` with auto-confirmation, or patches `~/.hermes/config.yaml` under `mcp_servers:` using `yaml`.

@@ -1,6 +1,6 @@
 # content-parser
 
-Website and asset extraction engine exposed as a Model Context Protocol (MCP) server and standalone CLI utility. Built for AI agents including Claude Code, OpenAI Codex, Cursor IDE, Google Antigravity, and FrontHarness.
+Website and asset extraction engine exposed as a Model Context Protocol (MCP) server and standalone CLI utility. Built for AI agents including Claude Code, OpenAI Codex, Cursor IDE, Google Antigravity, and Hermes Agent.
 
 Extracts visual assets, media streams, 3D models, typography, DOM structure, semantic text, UI components, and multi-page screenshots.
 
@@ -49,7 +49,7 @@ content-parser add claude        # Configures Claude Code (~/.claude.json)
 content-parser add cursor        # Configures Cursor IDE (~/.cursor/mcp.json)
 content-parser add codex         # Configures OpenAI Codex (~/.codex/config.toml)
 content-parser add antigravity   # Configures Google Antigravity (~/.gemini/antigravity/mcp_config.json)
-content-parser add harmess       # Configures FrontHarness (~/.config/frontharness/config.yaml)
+content-parser add hermes        # Configures Hermes Agent (~/.hermes/config.yaml)
 content-parser add all           # Injects into all detected agents
 ```
 
@@ -148,7 +148,13 @@ args = ["start", "--stdio"]
 }
 ```
 
-### FrontHarness (`~/.config/frontharness/config.yaml`)
+### Hermes Agent (`~/.hermes/config.yaml`)
+
+```bash
+hermes mcp add content-parser --command content-parser --args start --stdio
+```
+
+Or manually in `~/.hermes/config.yaml`:
 
 ```yaml
 mcp_servers:
