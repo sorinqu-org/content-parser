@@ -11,6 +11,7 @@ pnpm-debug.log*
 .env.*.local
 downloads/
 parsed_output/
+parsed_site/
 test_output/
 .DS_Store
 Thumbs.db

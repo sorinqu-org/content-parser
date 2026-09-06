@@ -13,6 +13,7 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "start": "node bin/content-parser.js start",
+    "serve:clone": "node site-clone/serve.js",
     "typecheck": "tsc --noEmit",
     "test": "tsx --test src/test/parser.test.ts"
   },
